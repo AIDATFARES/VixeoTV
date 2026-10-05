@@ -37,10 +37,11 @@ export async function generateMetadata({ params }) {
       url: `${siteConfig.domain}/blog/${post.slug}`,
       images: [
         {
-          url: `${siteConfig.domain}/og-image.svg`,
+          url: `${siteConfig.domain}/og-image.jpg`,
           width: 1200,
           height: 630,
           alt: post.title,
+          type: 'image/jpeg',
         },
       ],
     },
@@ -48,6 +49,7 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: post.title,
       description: post.metaDescription || post.excerpt,
+      images: [`${siteConfig.domain}/og-image.jpg`],
     },
   };
 }

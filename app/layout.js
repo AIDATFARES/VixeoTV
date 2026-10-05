@@ -34,10 +34,18 @@ export const metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: `${siteConfig.domain}/og-image.svg`,
+        url: `${siteConfig.domain}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: 'VixeoTV - Premium Ultra HD IPTV Service',
+        type: 'image/jpeg',
+      },
+      {
+        url: `${siteConfig.domain}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'VixeoTV - Premium Ultra HD IPTV Service',
+        type: 'image/png',
       },
     ],
   },
@@ -45,7 +53,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'VixeoTV — Premium IPTV Service | 4K Ultra HD & 60FPS Live Streams',
     description: siteConfig.description,
-    images: [`${siteConfig.domain}/og-image.svg`],
+    images: [`${siteConfig.domain}/og-image.jpg`],
   },
   robots: {
     index: true,
