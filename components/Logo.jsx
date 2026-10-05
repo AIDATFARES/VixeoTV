@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Logo({ compact = false, className = '', onClick }) {
@@ -29,25 +30,15 @@ export default function Logo({ compact = false, className = '', onClick }) {
       aria-label="VixeoTV - Return to homepage"
     >
       {/* Icon Mark */}
-      <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-brand-bg-tertiary to-brand-bg-secondary p-0.5 border border-brand-primary/30 group-hover:border-brand-primary group-hover:shadow-glow-primary transition-all duration-300 flex items-center justify-center overflow-hidden flex-shrink-0">
-        <svg
-          viewBox="0 0 100 100"
-          className="w-full h-full p-1"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient id="vixLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#00D4FF" />
-              <stop offset="100%" stopColor="#7928CA" />
-            </linearGradient>
-          </defs>
-          <path
-            d="M26 30 L45 68 C47 72 53 72 55 68 L74 30 L62 30 L50 56 L38 30 Z"
-            fill="url(#vixLogoGrad)"
-          />
-          <polygon points="46,42 58,49 46,56" fill="#FFFFFF" />
-        </svg>
+      <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-all duration-300">
+        <Image
+          src="/images/vixeo-icon.png"
+          alt="VixeoTV Icon"
+          width={40}
+          height={40}
+          className="w-full h-full object-contain rounded-xl"
+          priority
+        />
       </div>
 
       {/* Typography */}

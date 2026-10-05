@@ -59,11 +59,12 @@ export const metadata = {
   },
   icons: {
     icon: [
+      { url: '/images/vixeo-icon.png', type: 'image/png' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/logo-icon.svg', type: 'image/svg+xml' }
     ],
     apple: [
-      { url: '/logo-icon.svg' }
+      { url: '/images/vixeo-icon.png' }
     ],
   },
 };
