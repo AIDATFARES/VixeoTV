@@ -88,39 +88,9 @@ export default function Hero() {
               </div>
 
               {/* Trust Footnote */}
-              <p className="text-xs text-brand-text-muted mb-6">
+              <p className="text-xs text-brand-text-muted mb-4">
                 <Link href="/pricing" className="hover:text-brand-primary underline decoration-white/20">Instant IPTV activation</Link> • <Link href="/devices" className="hover:text-brand-primary underline decoration-white/20">Multi-device support</Link> • <Link href="/support" className="hover:text-brand-primary underline decoration-white/20">24/7 WhatsApp helpdesk</Link>
               </p>
-
-              {/* Feature Checklist (Moved below buttons) */}
-              <div className="space-y-3 mb-5">
-                <div className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
-                    <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
-                  </div>
-                  <span className="text-xs sm:text-sm text-white font-medium">
-                    Thousands of <Link href="/channels" className="text-brand-primary hover:underline">live TV channels</Link> &amp; high-speed 4K VOD library
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
-                    <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
-                  </div>
-                  <span className="text-xs sm:text-sm text-white font-medium">
-                    Buffer-free Full HD &amp; 4K streams powered by <Link href="/features" className="text-brand-primary hover:underline">Anti-Freeze v2.0</Link>
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
-                    <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
-                  </div>
-                  <span className="text-xs sm:text-sm text-white font-medium">
-                    Global sports leagues, trending movies &amp; full <Link href="/channels" className="text-brand-primary hover:underline">EPG TV guide</Link>
-                  </span>
-                </div>
-              </div>
 
               {/* Ratings line */}
               <div className="flex items-center gap-2 text-xs sm:text-sm">
@@ -246,6 +216,36 @@ export default function Hero() {
                     </div>
                     <span className="text-[10px] sm:text-xs font-semibold block mt-0.5 opacity-90">
                       / month • 1 device
+                    </span>
+                  </div>
+                </div>
+
+                {/* 4. Feature Checklist (Bottom-Right of Hero Collage) */}
+                <div className="mt-5 sm:mt-6 space-y-2.5 relative z-20">
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
+                      <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
+                    </div>
+                    <span className="text-xs sm:text-sm text-white font-medium">
+                      Thousands of <Link href="/channels" className="text-brand-primary hover:underline">live TV channels</Link> &amp; high-speed 4K VOD library
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
+                      <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
+                    </div>
+                    <span className="text-xs sm:text-sm text-white font-medium">
+                      Buffer-free Full HD &amp; 4K streams powered by <Link href="/features" className="text-brand-primary hover:underline">Anti-Freeze v2.0</Link>
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <div className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0 shadow-sm shadow-brand-primary/30">
+                      <Check className="w-3.5 h-3.5 text-brand-bg stroke-[3.5]" />
+                    </div>
+                    <span className="text-xs sm:text-sm text-white font-medium">
+                      Global sports leagues, trending movies &amp; full <Link href="/channels" className="text-brand-primary hover:underline">EPG TV guide</Link>
                     </span>
                   </div>
                 </div>
