@@ -131,3 +131,25 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Hide Google Translate top banner & popups */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important;
+}
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+.skiptranslate:not(.translate-widget) {
+  display: none !important;
+}

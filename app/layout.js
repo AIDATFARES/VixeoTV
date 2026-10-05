@@ -2,6 +2,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 import JsonLd from '@/components/JsonLd';
 import { siteConfig } from '@/data/siteConfig';
 
@@ -114,6 +115,7 @@ export default function RootLayout({ children }) {
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <LanguageSwitcher />
       </body>
     </html>
   );
