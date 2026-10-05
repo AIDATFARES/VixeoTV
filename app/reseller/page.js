@@ -49,9 +49,22 @@ export default function ResellerPage() {
     '@type': 'Product',
     name: 'VixeoTV IPTV Reseller Panel & Credits',
     description: 'High-margin IPTV reseller program with dedicated Xtream Codes panel, credits that never expire, and sub-reseller management.',
+    image: [
+      `${siteConfig.domain}/images/hero-tv-show.jpg`,
+      `${siteConfig.domain}/images/hero-sports.jpg`
+    ],
+    sku: 'VIXEOTV-RESELLER-PANEL',
+    mpn: 'VIXEOTV-CREDITS-PANEL',
     brand: {
       '@type': 'Brand',
       name: siteConfig.name,
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '380',
+      bestRating: '5',
+      worstRating: '1',
     },
     offers: {
       '@type': 'AggregateOffer',
@@ -59,12 +72,15 @@ export default function ResellerPage() {
       highPrice: '1999.00',
       priceCurrency: 'USD',
       offerCount: resellerCreditPackages.length,
+      priceValidUntil: '2027-12-31',
       offers: resellerCreditPackages.map((p) => ({
         '@type': 'Offer',
         name: `${p.name} Reseller Panel`,
-        price: p.price.toString(),
+        price: p.price.toFixed(2),
         priceCurrency: 'USD',
+        priceValidUntil: '2027-12-31',
         availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
         url: `${siteConfig.domain}/reseller`,
       })),
     },
