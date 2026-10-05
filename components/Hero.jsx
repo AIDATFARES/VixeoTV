@@ -5,7 +5,7 @@ import { siteConfig } from '@/data/siteConfig';
 
 export default function Hero() {
   return (
-    <section className="relative pt-24 pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 bg-brand-bg overflow-hidden">
+    <section className="relative pt-[70px] pb-10 sm:pt-[74px] sm:pb-14 lg:pt-[78px] lg:pb-16 bg-brand-bg overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
         {/* Main Hero Card Container */}
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden border border-white/10 bg-[#0E131F] shadow-2xl min-h-[580px] lg:min-h-[640px] flex items-center">

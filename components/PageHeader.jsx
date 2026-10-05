@@ -10,7 +10,7 @@ export default function PageHeader({
   children
 }) {
   return (
-    <section className="relative pt-32 pb-16 md:pt-36 md:pb-20 bg-gradient-to-b from-brand-bg-secondary via-brand-bg to-brand-bg border-b border-white/5 overflow-hidden">
+    <section className="relative pt-[76px] pb-10 sm:pt-[80px] sm:pb-12 md:pt-[84px] md:pb-14 bg-gradient-to-b from-brand-bg-secondary via-brand-bg to-brand-bg border-b border-white/5 overflow-hidden">
       {/* Background glow effects */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-brand-secondary/10 rounded-full blur-3xl pointer-events-none" />
