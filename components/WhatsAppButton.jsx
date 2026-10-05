@@ -8,23 +8,23 @@ export default function WhatsAppButton() {
   return (
     <aside
       aria-label="WhatsApp live chat support"
-      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end pointer-events-auto select-none"
+      className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex flex-col items-end pointer-events-auto select-none"
     >
       {/* Speech Bubble Tooltip */}
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group/bubble relative mb-3 mr-1 sm:mr-2 inline-flex items-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] shadow-[0_6px_20px_rgba(0,0,0,0.35)] hover:shadow-[0_8px_25px_rgba(37,211,102,0.4)] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer animate-in fade-in slide-in-from-bottom-2 duration-300"
+        className="group/bubble relative mb-3.5 mr-2 sm:mr-3 inline-flex items-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] shadow-[0_8px_25px_rgba(0,0,0,0.4)] hover:shadow-[0_10px_35px_rgba(37,211,102,0.45)] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer animate-in fade-in slide-in-from-bottom-2 duration-300"
         aria-label="Need help? Chat with us on WhatsApp"
       >
-        <span className="text-xs sm:text-sm font-extrabold text-zinc-950 whitespace-nowrap tracking-tight">
+        <span className="text-sm sm:text-base font-black text-zinc-950 whitespace-nowrap tracking-tight">
           Need help? Chat with us!
         </span>
 
         {/* Speech Bubble Pointer Tail */}
         <span
-          className="absolute -bottom-1.5 right-6 sm:right-7 w-3.5 h-3.5 bg-[#25D366] group-hover/bubble:bg-[#20bd5a] rotate-45 transition-colors duration-300"
+          className="absolute -bottom-2 right-8 sm:right-9 w-4 h-4 bg-[#25D366] group-hover/bubble:bg-[#20bd5a] rotate-45 transition-colors duration-300"
           aria-hidden="true"
         />
       </a>
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
       <div className="relative group flex items-center justify-center">
         {/* Soft Ambient Glow Halo */}
         <div
-          className="absolute -inset-2.5 sm:-inset-3 rounded-full bg-[#25D366]/20 pointer-events-none transition-transform duration-300 group-hover:scale-115"
+          className="absolute -inset-3.5 sm:-inset-4 rounded-full bg-[#25D366]/25 pointer-events-none transition-transform duration-300 group-hover:scale-115"
           aria-hidden="true"
         />
 
@@ -41,12 +41,12 @@ export default function WhatsAppButton() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative w-13 h-13 sm:w-15 sm:h-15 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-[0_8px_25px_rgba(37,211,102,0.45)] hover:shadow-[0_12px_35px_rgba(37,211,102,0.7)] hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#25D366]/30"
+          className="relative w-16 h-16 sm:w-[72px] sm:h-[72px] rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-[0_10px_30px_rgba(37,211,102,0.5)] hover:shadow-[0_14px_45px_rgba(37,211,102,0.75)] hover:scale-108 active:scale-95 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
           aria-label="Chat with VixeoTV on WhatsApp"
         >
           {/* Official WhatsApp Logo SVG */}
           <svg
-            className="w-7 h-7 sm:w-8 sm:h-8 fill-white transition-transform duration-300 group-hover:scale-110"
+            className="w-9 h-9 sm:w-10 sm:h-10 fill-white transition-transform duration-300 group-hover:scale-110 shrink-0"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
