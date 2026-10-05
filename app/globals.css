@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #00D4FF;
+  --color-primary-light: #5CE1E6;
+  --color-primary-hover: #00B8DE;
+  --color-primary-dark: #0090B0;
+  --color-secondary: #7928CA;
+  --color-secondary-light: #9B51E0;
+  --color-accent: #FF416C;
+  --color-gold: #FFB800;
+  
+  --color-background: #080B11;
+  --color-background-secondary: #0E131F;
+  --color-background-tertiary: #141B2D;
+  --color-surface: #1A2238;
+  --color-surface-hover: #212B47;
+  
+  --color-text: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-focus: rgba(0, 212, 255, 0.4);
+  
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #20BD5A;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Glassmorphism & Custom Component Styles */
+.glass-panel {
+  background: rgba(14, 19, 31, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  border-color: rgba(0, 212, 255, 0.35);
+  box-shadow: 0 16px 36px -12px rgba(0, 212, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.glow-pill {
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080B11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A2238;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D4FF;
+}
+
+/* Accessibility focus state */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Button Animation Keyframes & Classes */
+@keyframes shimmerSweep {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  30%, 100% {
+    transform: translateX(350%) skewX(-20deg);
+  }
+}
+
+@keyframes pulseGlowBtn {
+  0%, 100% {
+    box-shadow: 0 0 18px rgba(0, 212, 255, 0.35), 0 0 35px rgba(0, 212, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.65), 0 0 50px rgba(0, 212, 255, 0.3);
+  }
+}
+
+.animate-shimmer-sweep {
+  animation: shimmerSweep 3.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-pulse-glow-btn {
+  animation: pulseGlowBtn 3s infinite ease-in-out;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
