@@ -156,12 +156,12 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                   </div>
 
                   {/* Bottom Bezel with Metallic Stand Accent */}
-                  <div className="bg-[#0A0E17] py-2 px-4 flex items-center justify-between text-[10px] text-white/50 border-t border-white/5">
+                  <div className="bg-[#0A0E17] py-2 px-4 flex items-center justify-between text-[10px] text-slate-300 border-t border-white/5">
                     <div className="flex items-center gap-1.5 font-heading font-black tracking-wider text-brand-primary">
                       <span>VIXEO</span>
                       <span className="text-white">TV</span>
                     </div>
-                    <span>Certified Player Feed • Ultra Low Latency</span>
+                    <span className="text-slate-300">Certified Player Feed • Ultra Low Latency</span>
                   </div>
                 </div>
 
@@ -171,7 +171,7 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                     <ActiveIcon className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-[11px] font-semibold text-brand-text-muted uppercase tracking-wider">
+                    <div className="text-[11px] font-bold text-slate-300 uppercase tracking-wider">
                       Target Hardware
                     </div>
                     <div className="text-xs sm:text-sm font-bold text-white font-heading">
@@ -357,7 +357,7 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
 
                     {/* Recommended App Badges */}
                     <div className="mb-6">
-                      <span className="text-[10px] font-bold text-brand-text-muted uppercase tracking-wider block mb-2">
+                      <span className="text-[10px] font-bold text-slate-300 uppercase tracking-wider block mb-2">
                         Top Tested Apps:
                       </span>
                       <div className="flex flex-wrap gap-1.5">
@@ -375,7 +375,7 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
 
                   {/* Card Footer: Guide Link */}
                   <div className="pt-4 border-t border-white/5 flex items-center justify-between">
-                    <span className="text-[11px] font-bold text-brand-text-muted">
+                    <span className="text-[11px] font-bold text-slate-300">
                       Difficulty: <span className="text-white">{device.difficulty}</span>
                     </span>
 

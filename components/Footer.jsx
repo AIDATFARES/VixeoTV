@@ -35,16 +35,16 @@ export default function Footer() {
 
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="inline-flex items-center gap-2 text-xs font-semibold text-brand-text-muted hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-slate-300 hover:text-white transition-colors"
               >
                 <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center">
-                  <Mail className="w-3.5 h-3.5 text-brand-text-muted" />
+                  <Mail className="w-3.5 h-3.5 text-slate-300" />
                 </div>
                 <span>Email: {siteConfig.email}</span>
               </a>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-bg-secondary border border-white/5 text-xs text-brand-text-muted">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-brand-bg-secondary border border-white/5 text-xs text-slate-300">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>All Streaming Edge Gateways Operational</span>
             </div>
@@ -122,7 +122,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-brand-text-muted hover:text-white transition-colors text-xs"
+                    className="text-slate-300 hover:text-white transition-colors text-xs"
                   >
                     {link.label}
                   </Link>
@@ -133,7 +133,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-text-muted">
+        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300">
           <p>© {currentYear} {siteConfig.name}. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/legal/privacy" className="hover:text-white transition-colors">

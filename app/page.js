@@ -87,28 +87,28 @@ export default function HomePage() {
                 <Zap className="w-5 h-5" />
               </div>
               <span className="text-white font-bold text-sm sm:text-base font-heading">Anti-Freeze v2.0 IPTV</span>
-              <span className="text-brand-text-muted text-xs">Proprietary Stream Balancing</span>
+              <span className="text-slate-300 font-medium text-xs">Proprietary Stream Balancing</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-10 h-10 rounded-xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-2">
                 <Tv className="w-5 h-5" />
               </div>
               <span className="text-white font-bold text-sm sm:text-base font-heading">4K &amp; Full HD IPTV</span>
-              <span className="text-brand-text-muted text-xs">H.265 / HEVC 60FPS Feeds</span>
+              <span className="text-slate-300 font-medium text-xs">H.265 / HEVC 60FPS Feeds</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-10 h-10 rounded-xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-2">
                 <Clock className="w-5 h-5" />
               </div>
               <span className="text-white font-bold text-sm sm:text-base font-heading">Fast IPTV Activation</span>
-              <span className="text-brand-text-muted text-xs">Xtream Credentials in Minutes</span>
+              <span className="text-slate-300 font-medium text-xs">Xtream Credentials in Minutes</span>
             </div>
             <div className="flex flex-col items-center">
               <div className="w-10 h-10 rounded-xl bg-brand-primary/10 text-brand-primary flex items-center justify-center mb-2">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <span className="text-white font-bold text-sm sm:text-base font-heading">24/7 IPTV Support</span>
-              <span className="text-brand-text-muted text-xs">Direct WhatsApp Helpdesk</span>
+              <span className="text-slate-300 font-medium text-xs">Direct WhatsApp Helpdesk</span>
             </div>
           </div>
         </div>

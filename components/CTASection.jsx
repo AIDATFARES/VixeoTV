@@ -57,7 +57,7 @@ export default function CTASection({
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-2 text-xs text-brand-text-muted">
+          <div className="flex items-center justify-center gap-2 text-xs text-slate-300">
             <ShieldCheck className="w-4 h-4 text-brand-primary" />
             <span>No Long-Term Contracts • <Link href="/setup" className="hover:text-brand-primary underline decoration-white/20">Instant Credentials</Link> • 24/7 <Link href="/support" className="hover:text-brand-primary underline decoration-white/20">WhatsApp Support</Link></span>
           </div>

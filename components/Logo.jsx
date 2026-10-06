@@ -52,7 +52,7 @@ export default function Logo({ compact = false, className = '', onClick }) {
               TV
             </span>
           </div>
-          <span className="text-[9px] uppercase tracking-widest text-brand-text-muted font-semibold mt-0.5">
+          <span className="text-[9px] uppercase tracking-widest text-slate-300 font-bold mt-0.5">
             Ultra HD Streams
           </span>
         </div>

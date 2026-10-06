@@ -35,7 +35,7 @@ export default function PricingSection({ hideHeader = false }) {
 
         {/* Multi-Device Connection Selector Tabs */}
         <div className="flex flex-col items-center justify-center mb-12">
-          <span className="text-xs font-semibold text-brand-text-muted uppercase tracking-wider mb-3">
+          <span className="text-xs font-bold text-slate-200 uppercase tracking-wider mb-3">
             Select Number of Simultaneous Device Connections:
           </span>
           <div className="inline-flex p-1.5 rounded-2xl bg-brand-bg-secondary border border-white/10 max-w-full overflow-x-auto">
@@ -129,7 +129,7 @@ export default function PricingSection({ hideHeader = false }) {
                         </span>
                       )}
                     </div>
-                    <div className="text-[10px] text-brand-text-muted mt-0.5">
+                    <div className="text-[11px] font-semibold text-slate-300 mt-0.5">
                       {selectedConnections} Device Connection{selectedConnections > 1 ? 's' : ''}
                     </div>
                   </div>

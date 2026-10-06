@@ -116,12 +116,12 @@ export default function FeaturesSection({ showComparison = true, hideHeader = fa
               <table className="w-full text-left text-xs sm:text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-white/10 text-white">
-                    <th className="py-3 px-3 font-semibold text-brand-text-muted">Feature</th>
+                    <th className="py-3 px-3 font-semibold text-slate-300">Feature</th>
                     <th className="py-3 px-3 font-black text-brand-primary bg-brand-primary/10 rounded-t-xl">
                       VixeoTV
                     </th>
-                    <th className="py-3 px-3 font-semibold text-brand-text-muted">Cable TV</th>
-                    <th className="py-3 px-3 font-semibold text-brand-text-muted">Generic IPTV</th>
+                    <th className="py-3 px-3 font-semibold text-slate-300">Cable TV</th>
+                    <th className="py-3 px-3 font-semibold text-slate-300">Generic IPTV</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5 text-brand-text-secondary">
@@ -131,8 +131,8 @@ export default function FeaturesSection({ showComparison = true, hideHeader = fa
                       <td className="py-3.5 px-3 font-bold text-brand-primary bg-brand-primary/5">
                         {row.vixeo}
                       </td>
-                      <td className="py-3.5 px-3 text-brand-text-muted">{row.traditionalCable}</td>
-                      <td className="py-3.5 px-3 text-brand-text-muted">{row.genericIptv}</td>
+                      <td className="py-3.5 px-3 text-slate-300">{row.traditionalCable}</td>
+                      <td className="py-3.5 px-3 text-slate-300">{row.genericIptv}</td>
                     </tr>
                   ))}
                 </tbody>

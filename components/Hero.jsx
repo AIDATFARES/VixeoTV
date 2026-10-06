@@ -90,8 +90,8 @@ export default function Hero() {
               </div>
 
               {/* Trust Footnote */}
-              <p className="text-xs text-brand-text-muted mb-4">
-                <Link href="/pricing" className="hover:text-brand-primary underline decoration-white/20">Instant IPTV activation</Link> • <Link href="/devices" className="hover:text-brand-primary underline decoration-white/20">Multi-device support</Link> • <Link href="/support" className="hover:text-brand-primary underline decoration-white/20">24/7 WhatsApp helpdesk</Link>
+              <p className="text-xs text-slate-300 mb-4">
+                <Link href="/pricing" className="hover:text-brand-primary underline decoration-slate-400/40">Instant IPTV activation</Link> • <Link href="/devices" className="hover:text-brand-primary underline decoration-slate-400/40">Multi-device support</Link> • <Link href="/support" className="hover:text-brand-primary underline decoration-slate-400/40">24/7 WhatsApp helpdesk</Link>
               </p>
 
               {/* Ratings line */}

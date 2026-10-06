@@ -105,7 +105,7 @@ export default function ChannelsSection({ hideHeader = false }) {
               <div className="text-2xl sm:text-3xl font-black font-heading text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-primary-light">
                 {stat.value}
               </div>
-              <div className="text-xs text-brand-text-muted mt-1 font-medium">{stat.label}</div>
+              <div className="text-xs text-slate-300 mt-1 font-semibold">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -218,7 +218,7 @@ export default function ChannelsSection({ hideHeader = false }) {
                     <h3 className="text-sm sm:text-base font-bold font-heading text-white group-hover:text-brand-primary transition-colors line-clamp-1">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-brand-text-muted mt-1 line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-slate-300 mt-1 line-clamp-2 leading-relaxed">
                       {item.description}
                     </p>
                   </div>

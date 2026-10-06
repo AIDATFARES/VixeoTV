@@ -85,7 +85,7 @@ export default function ContactForm() {
         </div>
 
         {/* Security notice */}
-        <div className="rounded-2xl bg-brand-bg-secondary/60 p-6 border border-white/5 flex items-start gap-3 text-xs text-brand-text-muted">
+        <div className="rounded-2xl bg-brand-bg-secondary/60 p-6 border border-white/5 flex items-start gap-3 text-xs text-slate-300">
           <Shield className="w-4 h-4 text-brand-primary flex-shrink-0 mt-0.5" />
           <span>
             Security Reminder: VixeoTV support agents will never ask for your confidential banking PIN or payment card codes.
@@ -108,7 +108,7 @@ export default function ContactForm() {
               <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
-              <h4 className="text-lg font-bold text-white font-heading">Inquiry Initiated!</h4>
+              <h3 className="text-lg font-bold text-white font-heading">Inquiry Initiated!</h3>
               <p className="text-xs sm:text-sm text-brand-text-secondary max-w-md mx-auto">
                 Your message has been formatted for WhatsApp delivery. If your chat did not open automatically, click below:
               </p>
