@@ -140,9 +140,9 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                             Anti-Freeze Active
                           </span>
                         </div>
-                        <h4 className="text-lg sm:text-xl font-black text-white font-heading drop-shadow-md">
+                        <p className="text-lg sm:text-xl font-black text-white font-heading drop-shadow-md">
                           {activeDevice.name}
-                        </h4>
+                        </p>
                         <p className="text-xs text-white/80 drop-shadow">
                           {activeDevice.streamQuality}
                         </p>
@@ -341,9 +341,9 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                       </div>
                     </div>
 
-                    <h4 className="text-xl font-bold font-heading text-white mb-2 group-hover:text-brand-primary transition-colors">
+                    <h3 className="text-xl font-bold font-heading text-white mb-2 group-hover:text-brand-primary transition-colors">
                       {device.name}
-                    </h4>
+                    </h3>
 
                     <p className="text-xs text-brand-text-secondary leading-relaxed mb-5">
                       {device.shortDesc}
@@ -403,9 +403,9 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                   <span className="text-xs font-bold uppercase tracking-wider text-brand-primary font-heading">
                     Universal Protocol Support
                   </span>
-                  <h4 className="text-lg sm:text-xl font-bold font-heading text-white mt-1 mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold font-heading text-white mt-1 mb-2">
                     Already Have a Preferred Player Installed?
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-brand-text-secondary leading-relaxed">
                     VixeoTV is fully open and compatible with any IPTV app in the world. Connect in seconds via Xtream Codes API, standard M3U/M3U8 URLs, or MAG Stalker portals — check out our <Link href="/setup" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">configuration guides</Link> or view our <Link href="/channels" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">channel list</Link>.
                   </p>
@@ -433,9 +433,9 @@ export default function DevicesSection({ hideHeader = false, showProtocolsAndHel
                   <MessageCircle className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-bold text-white font-heading">
+                  <h3 className="text-base sm:text-lg font-bold text-white font-heading">
                     Can&apos;t find your device or need personal help?
-                  </h4>
+                  </h3>
                   <p className="text-xs sm:text-sm text-brand-text-secondary mt-0.5">
                     Our technical <Link href="/support" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">support engineers</Link> are available 24/7 on WhatsApp to guide you step-by-step through installation or check our <Link href="/faq" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">frequently asked questions</Link>.
                   </p>

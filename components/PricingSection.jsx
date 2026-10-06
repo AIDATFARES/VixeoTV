@@ -167,9 +167,9 @@ export default function PricingSection({ hideHeader = false }) {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full flex items-center justify-center gap-1 py-1 text-[11px] font-medium text-brand-text-muted hover:text-emerald-400 transition-colors"
+                    className="w-full flex items-center justify-center gap-1.5 py-1 text-xs font-semibold text-slate-300 hover:text-emerald-400 transition-colors"
                   >
-                    <MessageCircle className="w-3 h-3 text-emerald-400" />
+                    <MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
                     <span>Ask on WhatsApp</span>
                   </a>
                 </div>
@@ -186,8 +186,8 @@ export default function PricingSection({ hideHeader = false }) {
                 <Check className="w-4 h-4 text-brand-primary" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-white font-heading">{item.title}</h4>
-                <p className="text-xs text-brand-text-muted leading-relaxed mt-0.5">{item.description}</p>
+                <h3 className="text-sm font-bold text-white font-heading">{item.title}</h3>
+                <p className="text-xs text-slate-300 leading-relaxed mt-0.5">{item.description}</p>
               </div>
             </div>
           ))}

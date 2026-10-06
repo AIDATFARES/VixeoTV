@@ -116,18 +116,18 @@ export default function Footer() {
                   )}
                 </li>
               ))}
-              <div className="pt-3 border-t border-white/5 space-y-2.5">
-                {siteConfig.footerLinks.legal.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-brand-text-muted hover:text-white transition-colors text-xs"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </div>
+            </ul>
+            <ul className="pt-3 border-t border-white/5 space-y-2.5 text-xs">
+              {siteConfig.footerLinks.legal.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-brand-text-muted hover:text-white transition-colors text-xs"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

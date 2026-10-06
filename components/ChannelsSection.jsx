@@ -242,9 +242,9 @@ export default function ChannelsSection({ hideHeader = false }) {
         {/* 5. Bottom Action Strip */}
         <div className="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-brand-bg-secondary via-brand-surface to-brand-bg-secondary border border-white/10 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <h4 className="text-lg sm:text-xl font-bold font-heading text-white">
+            <h3 className="text-lg sm:text-xl font-bold font-heading text-white">
               Ready to watch these live channels &amp; 4K movies on your own screen?
-            </h4>
+            </h3>
             <p className="text-xs sm:text-sm text-brand-text-secondary mt-1">
               Compatible with Amazon Firestick, Android TV, Smart TVs, and Apple TV (see our <Link href="/devices" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">supported devices</Link> and step-by-step <Link href="/setup" className="text-white hover:text-brand-primary underline decoration-brand-primary/40 underline-offset-2 transition-colors">IPTV setup guides</Link>). Instant activation in 2-5 minutes.
             </p>
@@ -289,9 +289,9 @@ export default function ChannelsSection({ hideHeader = false }) {
             <div className="bg-black/90 px-4 sm:px-6 py-3 border-b border-white/10 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                <h4 className="text-sm sm:text-base font-bold text-white truncate font-heading">
+                <h3 className="text-sm sm:text-base font-bold text-white truncate font-heading">
                   {activeModalItem.title}
-                </h4>
+                </h3>
                 <span className="hidden sm:inline-block px-2.5 py-0.5 rounded text-[10px] font-bold bg-brand-primary/20 text-brand-primary">
                   {activeModalItem.badge}
                 </span>

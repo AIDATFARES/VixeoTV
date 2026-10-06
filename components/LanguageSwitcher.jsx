@@ -126,15 +126,25 @@ function FlagIcon({ code, className = 'w-5 h-3.5' }) {
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState(languages[0]);
+  const [loadScript, setLoadScript] = useState(false);
   const dropdownRef = useRef(null);
   const listRef = useRef(null);
+
+  const initTranslate = () => {
+    setLoadScript(true);
+  };
 
   // Sync with cookie on mount
   useEffect(() => {
     const match = document.cookie.match(/(?:^|;\s*)googtrans=\/([^/]+)\/([a-z]{2})/);
     if (match && match[2]) {
       const found = languages.find((l) => l.code === match[2]);
-      if (found) setCurrentLang(found);
+      if (found) {
+        setCurrentLang(found);
+        if (found.code !== 'en') {
+          setLoadScript(true);
+        }
+      }
     }
 
     // Define Google Translate element init callback
@@ -164,6 +174,7 @@ export default function LanguageSwitcher() {
   }, []);
 
   const handleSelect = (lang) => {
+    initTranslate();
     setCurrentLang(lang);
     setIsOpen(false);
 
@@ -263,7 +274,12 @@ export default function LanguageSwitcher() {
         {/* Floating Trigger Button */}
         <button
           type="button"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {
+            initTranslate();
+            setIsOpen(!isOpen);
+          }}
+          onMouseEnter={initTranslate}
+          onFocus={initTranslate}
           aria-expanded={isOpen}
           aria-label="Change website language"
           className="relative inline-flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-[#0c1220] hover:bg-[#11182c] text-white border border-indigo-400/50 ring-4 ring-indigo-500/25 shadow-[0_0_20px_rgba(99,102,241,0.35)] transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none"
@@ -283,11 +299,13 @@ export default function LanguageSwitcher() {
       {/* Hidden Google Translate Mount Container */}
       <div id="google_translate_element" className="hidden" aria-hidden="true" />
 
-      {/* Google Translate API Script */}
-      <Script
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-        strategy="afterInteractive"
-      />
+      {/* Google Translate API Script - Loaded on demand */}
+      {loadScript && (
+        <Script
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+      )}
     </>
   );
 }

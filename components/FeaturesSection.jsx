@@ -78,7 +78,7 @@ export default function FeaturesSection({ showComparison = true, hideHeader = fa
                     <div className="w-12 h-12 rounded-xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary group-hover:scale-110 group-hover:bg-brand-primary group-hover:text-brand-bg transition-all duration-300">
                       <IconComponent className="w-6 h-6" />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-white/5 text-brand-text-muted">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-white/10 text-slate-200">
                       {item.category}
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function FeaturesSection({ showComparison = true, hideHeader = fa
                 </div>
 
                 <div className="pt-4 border-t border-white/5 flex items-center justify-between text-xs text-brand-text-muted">
-                  <span className="text-[11px] font-medium text-brand-text-muted">{item.shortDesc}</span>
+                  <span className="text-[11px] font-medium text-slate-300">{item.shortDesc}</span>
                 </div>
               </div>
             );
@@ -141,8 +141,8 @@ export default function FeaturesSection({ showComparison = true, hideHeader = fa
 
             <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
               <div>
-                <h4 className="text-sm font-bold text-white">Ready to upgrade your home entertainment with VixeoTV IPTV?</h4>
-                <p className="text-xs text-brand-text-muted">Experience buffer-free 4K streaming with <Link href="/pricing" className="text-white hover:text-brand-primary underline decoration-white/20">instant activation</Link> and 24/7 dedicated <Link href="/support" className="text-brand-primary hover:underline">WhatsApp support</Link>.</p>
+                <h3 className="text-sm font-bold text-white">Ready to upgrade your home entertainment with VixeoTV IPTV?</h3>
+                <p className="text-xs text-slate-300">Experience buffer-free 4K streaming with <Link href="/pricing" className="text-white hover:text-brand-primary underline decoration-white/20">instant activation</Link> and 24/7 dedicated <Link href="/support" className="text-brand-primary hover:underline">WhatsApp support</Link>.</p>
               </div>
               <Link
                 href="/pricing"

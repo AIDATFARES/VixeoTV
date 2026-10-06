@@ -115,6 +115,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://translate.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://translate.googleapis.com" />
+        <link rel="preconnect" href="https://translate-pa.googleapis.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://translate-pa.googleapis.com" />
         <JsonLd data={organizationSchema} />
         <JsonLd data={websiteSchema} />
       </head>
